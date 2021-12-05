@@ -51,7 +51,7 @@
             <section class="hero section">
                 <div class="container">
                     <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-                    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+                    <button class="hero-button btn" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             
@@ -392,6 +392,18 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-social">
+                <p class="footer-social-header">Подпишитесь на рассылку</p>
+                <form action="#" class="footer-form">
+                    <label for="user-email"> </label>
+                    <input type="email" name="user-email" placeholder="E-mail" id="user-email" class="input-mail">
+                    <button class="btn" type="submit">Подписаться
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
         
     </footer>
@@ -404,14 +416,23 @@
                 </svg>
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                <form action="#" class="modal-form">
-                    <input type="text" name="user-name" class="modal-input">
-                    <input type="text" name="user-email" class="modal-input">
-                    <input type="text" name="user-tel" class="modal-input">
-                    <input type="text" name="user-comment" class="modal-input">
+                <form action="#" class="modal-form" autocomplete>
+                    <label for="name" class="modal-label">Имя</label>
+                    <input type="text" name="user-name" id="name" class="modal-input" required>
+                    
+                    <label for="tel" class="modal-label">Телефон</label>
+                    <input type="tel" name="user-tel" id="tel" title="+38 (050) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" class="modal-input" required>
+                    
+                    <label for="email" class="modal-label">Почта</label>
+                    <input type="email" name="user-email" id="email" class="modal-input" required>
+                    
+                    <label for="comment" class="modal-label">Комментарий</label>
+                    <textarea name="user-comment" placeholder="Введите текст" id="comment"></textarea>
+                    
                     <input type="checkbox">
-                    <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
-                    <button type="submit">Отправить</button>
+                    <p class="modal-agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+                    
+                    <button type="submit" class="btn" >Отправить</button>
 
 
 
