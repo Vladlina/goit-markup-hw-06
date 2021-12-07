@@ -597,6 +597,7 @@ address {
 .footer > .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .social-footer {
@@ -620,6 +621,11 @@ address {
   display: flex;
 }
 
+.input-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .input-mail {
   width: 358px;
   height: 50px;
@@ -639,6 +645,7 @@ address {
 }
 
 .subscribe-btn {
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
