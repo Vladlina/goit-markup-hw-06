@@ -392,8 +392,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-social">
-                <p class="footer-social-header">Подпишитесь на рассылку</p>
+            <div class="footer-subscribe">
+                <p class="footer-subscribe-header">Подпишитесь на рассылку</p>
                 <form action="#" class="footer-form">
                         <input type="email" name="user-email" placeholder="E-mail" id="user-email" class="input-mail">
                         <button class="btn subscribe-btn" type="submit">Подписаться
@@ -415,10 +415,10 @@
                 </svg>
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                <form action="#" class="modal-form" autocomplete>
+                <form action="#" class="modal-form" autocomplete="on">
                     <label for="name" class="modal-label">Имя</label>
                     <div class="modal-input-wrap">
-                        <input type="text" name="user-name" id="name" class="modal-input" required>
+                        <input type="text" name="user-name" id="name" class="modal-input" required autofocus>
                         <svg class="input-icon" width="18" height="18">
                             <use href="./images/icons.svg#person"></use>
                         </svg>
@@ -444,14 +444,12 @@
                         <input type="checkbox" name="checkbox" id="checkbox" class="modal-checkbox visually-hidden">
                         <label for="checkbox" class="modal-agree">
                             <span>
-                                <svg class="icon-check">
-                                    <use href="./images/icons.svg#icon-check" width="16" height="15"></use>
+                                <svg class="icon-check" width="16" height="15">
+                                    <use href="./images/icons.svg#icon-check"></use>
                                 </svg>
-                            </span>Соглашаюсь с рассылкой и принимаю <a class="modal-agree-link" href="">&nbspУсловия договора</a>
+                            </span>Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal-agree-link" href="">Условия договора</a>
                         </label>
                     </div>
-                    
-                    
                     <button type="submit" class="btn modal-btn" >Отправить</button>
                 </form>
         </div>
